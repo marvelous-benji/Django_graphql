@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,11 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+GRAPHENE = {
+        "SCHEMA":"blog.Schema.schema",
+        }
 
 
 # Password validation
